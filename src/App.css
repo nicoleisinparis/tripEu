@@ -17,7 +17,7 @@ body {
 :root {
   color-scheme: light dark; /* 讓瀏覽器尊重原本的配色 */
 }
-#footer,
+.footer,
 #header {
   margin: 0;
   background-color: rgb(177, 131, 74);
@@ -27,7 +27,11 @@ body {
   padding: 20px;
   text-align: center; /* 讓字體在滿版的背景裡置中 */
 }
-
+.footer b {
+  font-size: 17px !important;
+  color: rgb(212, 19, 26) !important;
+  line-height: 1.3;
+}
 #center {
   display: flex;
   flex-direction: column;
@@ -71,6 +75,10 @@ body {
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 5px;
+  }
+  h6 {
+    font-size: 20px;
+    padding: 10px;
   }
   a {
     font-size: 16px;
@@ -281,4 +289,11 @@ select {
     overflow-wrap: anywhere;
     margin: 0 0 12px;
   }
+}
+.bus > :nth-child(3) img {
+  width: 300px;
+  height: auto;
+}
+.phone1 img {
+  padding-top: 18px;
 }

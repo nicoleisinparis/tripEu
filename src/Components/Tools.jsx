@@ -1,7 +1,7 @@
 const Tools = () => {
   return (
     <div>
-      <h2>下載 App工具</h2>
+      <h2>App工具</h2>
       <div className="bus">
         <div className="software">
           <img
@@ -40,6 +40,13 @@ const Tools = () => {
                 alt="android-os"
               />
             </a>
+          </div>
+        </div>
+        <div className="software">
+          <img src="/src/assets/boltlogo.png" alt="boltlogo" />
+          <p>計程車</p>
+          <div className="phone1">
+            <img src="/src/assets/bolt.png" alt="bolt" />
           </div>
         </div>
       </div>

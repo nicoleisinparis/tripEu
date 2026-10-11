@@ -28,7 +28,7 @@ const App = () => {
     smichel: "聖米歇爾",
     colmar: "科爾馬",
     brusl: "布魯塞爾",
-    tools: "工具",
+    tools: "下載工具",
   };
   const labelFr = {
     paris: "Paris",
