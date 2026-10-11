@@ -273,4 +273,9 @@ select {
   .bus {
     flex-direction: column;
   }
+  .software {
+    flex: 1 1 100%;
+    min-width: 0;
+    margin: 0 0 12px;
+  }
 }
