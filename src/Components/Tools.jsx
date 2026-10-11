@@ -1,3 +1,5 @@
+import boltLogo from "../assets/boltlogo.png";
+import bolt from "../assets/bolt.png";
 const Tools = () => {
   return (
     <div>
@@ -37,16 +39,16 @@ const Tools = () => {
             <a href="https://play.google.com/store/apps/details?id=fr.maregionsud.zousibr">
               <img
                 src="https://img.icons8.com/plasticine/100/android-os.png"
-                alt="android-os"
+                alt="QR-code"
               />
             </a>
           </div>
         </div>
         <div className="software">
-          <img src="/src/assets/boltlogo.png" alt="boltlogo" />
+          <img src={boltLogo} alt="boltlogo" />
           <p>計程車</p>
           <div className="phone1">
-            <img src="/src/assets/bolt.png" alt="bolt" />
+            <img src={bolt} alt="bolt" />
           </div>
         </div>
       </div>
