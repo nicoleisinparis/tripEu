@@ -254,10 +254,11 @@ select {
   justify-content: center;
   gap: 8px;
 }
-.phone {
+/* .phone {
   height: 64px; /* keep the row/blank space the same */
-  overflow: visible;
-}
+/*overflow: visible;
+/* } */
+
 .phone img {
   width: 150px;
   height: 150px;
