@@ -36,7 +36,7 @@ const App = () => {
     smichel: "M. St-Michel",
     colmar: "Colmar",
     brusl: "Brussels",
-    tools: "App",
+    tools: "注意事項",
   };
 
   return (
