@@ -291,7 +291,7 @@ select {
   }
 }
 .bus > :nth-child(3) img {
-  width: 300px;
+  width: 400px;
   height: auto;
 }
 .phone1 img {

@@ -52,7 +52,7 @@ const Tools = () => {
           </div>
         </div>
       </div>
-      <div className="info">
+      <div className="detail">
         <h2>注意事項</h2>
         <br />
         <li>
