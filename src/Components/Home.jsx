@@ -1,7 +1,7 @@
-const Mix = () => {
+const Home = () => {
   return (
     <div className="homepage">
-      <h2>Bonjour! Bienvenu.</h2>
+      <h2>Bonjour! Bienvenue!</h2>
 
       <img
         src="https://res.cloudinary.com/dabohvtpk/image/upload/v1791705649/mix_klxvrw.jpg"
@@ -10,4 +10,4 @@ const Mix = () => {
     </div>
   );
 };
-export default Mix;
+export default Home;

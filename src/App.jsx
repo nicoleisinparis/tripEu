@@ -8,6 +8,7 @@ import Brusl from "./Components/Brusl";
 import Tools from "./Components/Tools";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
+
 const App = () => {
   const [activePage, setActivePage] = useState("home");
 
@@ -53,7 +54,7 @@ const App = () => {
             </button>
           ))}
       </div>
-      {/* {activePage && pages[activePage]} */}
+
       {pages[activePage]}
       <Footer />
     </section>

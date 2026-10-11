@@ -1,3 +1,6 @@
+/* * {
+  box-sizing: border-box;
+} */
 body {
   margin: 0;
   padding: 0;
@@ -18,8 +21,9 @@ body {
 #header {
   margin: 0;
   background-color: rgb(177, 131, 74);
+  margin-top: auto;
   /* ─── 加上這兩行修正 ─── */
-  width: 100vw; /* 讓寬度強制等於整個螢幕的視窗寬度 */
+  width: 100%; /* 讓寬度強制等於整個螢幕的視窗寬度 */
   padding: 20px;
   text-align: center; /* 讓字體在滿版的背景裡置中 */
 }
@@ -27,6 +31,7 @@ body {
 #center {
   display: flex;
   flex-direction: column;
+
   gap: 35px;
   place-content: center;
   place-items: center;
@@ -60,7 +65,8 @@ body {
     padding-top: 20px;
     padding-bottom: 5px;
   }
-  h5{color: rgba(187, 100, 164, 0.983);
+  h5 {
+    color: rgba(187, 100, 164, 0.983);
     font-size: 16px;
     font-weight: bold;
     padding-top: 20px;
@@ -80,7 +86,7 @@ body {
     font-size: 14px;
     color: rgb(159, 92, 10);
   }
- 
+
   a,
   p,
   li {
@@ -92,15 +98,16 @@ body {
   li {
     padding: 5px;
   }
-  i{
+  i {
     font-size: 25px;
     color: crimson;
     font-weight: bold;
-    margin: 0px 4px ;
+    margin: 0px 4px;
   }
-  em{
+  em {
     color: white;
   }
+
   .place {
     padding: 15px 10px; /* 上下左右全部留出 20px 的空間 */
     max-width: 800px; /* 限制寬度 */
@@ -149,7 +156,7 @@ body {
   height: 52px;
   padding: 5px 2px; /* 增加按鈕內襯，按鈕看起來更專業 */
   cursor: pointer;
-  color: rgb(20, 157, 72) !important; 
+  color: rgb(20, 157, 72) !important;
   font-weight: bold;
   background-color: rgba(8, 55, 12, 0.991) !important;
   border-radius: 10px;
@@ -163,15 +170,14 @@ body {
   margin-top: 15px; /* 選單與上方標題 H1 的間距 */
 }
 .walk {
-  color: rgba(229, 28, 135, 0.779) !important; 
+  color: rgba(229, 28, 135, 0.779) !important;
 }
-.photo{
+.photo {
   display: flex;
 }
-.hompage > img{
-  width:100%;
+.hompage > img {
+  width: 100%;
   max-width: 800px;
-
 }
 img {
   max-width: 31.5%;
@@ -186,6 +192,12 @@ img {
   border-radius: 10px;
 }
 
+.homepage > img {
+  width: 480px; /* choose the size you want */
+  height: auto; /* keeps the image proportions */
+  max-width: 100%; /* prevents overflow on smaller screens */
+  border-radius: 0;
+}
 .year {
   color: black;
   font-weight: bold; /* 順便加粗，讓視覺更有層次 */
@@ -206,3 +218,59 @@ select {
  
  
  
+
+/*app工具*/
+.bus {
+  display: flex;
+  gap: 8px;
+  margin: 20px;
+}
+
+.software {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.software img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.phone {
+  height: 64px; /* keep the row/blank space the same */
+  overflow: visible;
+}
+.phone img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  flex: none;
+}
+
+.software p {
+  line-height: 0.1 !important;
+}
+
+.software,
+.phone {
+  height: auto;
+  min-height: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .bus {
+    flex-direction: column;
+  }
+}
