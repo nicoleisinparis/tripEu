@@ -273,9 +273,12 @@ select {
   .bus {
     flex-direction: column;
   }
-  .software {
+  .bus .software {
     flex: 1 1 100%;
     min-width: 0;
+    height: auto;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
     margin: 0 0 12px;
   }
 }
